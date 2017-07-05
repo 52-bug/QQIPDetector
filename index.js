@@ -1,3 +1,4 @@
+var siteUrl = "";
 var myApp = new Framework7({
 	modalTitle: 'QQIP探测',
 	material: true,
@@ -52,7 +53,7 @@ $$('#collect-submit').on('click', function(e) {
 	url = url + "&url=";
 	url = url + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse($$("#url").val())));
 	url = url + "&image_url=";
-	url = url + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse("https://love.kke.moe/share.php?_U=" + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse($$("#cover").val()))) + "&_T=" + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(token))))));
+	url = url + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(siteUrl+"share.php?_U=" + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse($$("#cover").val()))) + "&_T=" + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(token))))));
 	url = url + "&title=";
 	url = url + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse($$("#title").val())));
 	url = url + "&description=";
