@@ -13,7 +13,7 @@
         <link href="https://cdn.bootcss.com/framework7/1.6.4/css/framework7.material.colors.min.css" rel="stylesheet">
         <link href="https://fonts.proxy.ustclug.org/css?family=Roboto:400,300,500,700" rel="stylesheet">
         <link href="https://fonts.proxy.ustclug.org/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="index.css?ver=9.1" /></head>
+        <link rel="stylesheet" href="index.css" /></head>
         <?php if($_GET['statusBarHeight'] != ''){ ?>
         <style>.statusbar-overlay{height:<?php echo $_GET['statusBarHeight']; ?>px;}.page{border-top:<?php echo $_GET['statusBarHeight']; ?>px solid #2196f3}.panel-left .list-block {margin:<?php echo $_GET['statusBarHeight']+2; ?>px 0;}</style>
         <?php } ?>
@@ -152,7 +152,7 @@
                 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
                 <script src="https://cdn.bootcss.com/crypto-js/3.1.9/crypto-js.min.js"></script>
                 <script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js"></script>
-                <script type="text/javascript" src="index.js?ver=11.9"></script>
+                <script type="text/javascript" src="index.js"></script>
             </body>
 
 </html>

@@ -78,11 +78,3 @@ function ipip(ip) {
 		}
 	})
 }
-myApp.addNotification({
-	message: '此应用仅在酷安网发布。',
-	hold: 10000
-});
-myApp.addNotification({
-	message: '如果出现404，请将跳转链接改为腾讯的链接后再试。',
-	hold: 1500
-});
