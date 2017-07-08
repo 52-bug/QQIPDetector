@@ -1,3 +1,4 @@
+var siteUrl = "";
 var myApp = new Framework7({
 	modalTitle: 'QQIP探测',
 	material: true,
@@ -52,7 +53,7 @@ $$('#collect-submit').on('click', function(e) {
 	url = url + "&url=";
 	url = url + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse($$("#url").val())));
 	url = url + "&image_url=";
-	url = url + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse("https://love.kke.moe/share.php?_U=" + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse($$("#cover").val()))) + "&_T=" + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(token))))));
+	url = url + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(siteUrl+"share.php?_U=" + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse($$("#cover").val()))) + "&_T=" + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(token))))));
 	url = url + "&title=";
 	url = url + encodeURIComponent(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse($$("#title").val())));
 	url = url + "&description=";
@@ -77,4 +78,16 @@ function ipip(ip) {
 			myApp.hideIndicator()
 		}
 	})
+<<<<<<< HEAD
 }
+=======
+}
+myApp.addNotification({
+	message: '此应用仅在酷安网发布。',
+	hold: 10000
+});
+myApp.addNotification({
+	message: '如果出现404，请将跳转链接改为腾讯的链接后再试。',
+	hold: 1500
+});
+>>>>>>> ff26ed1b5e9e3b0f382a53ee7bd70055e93ad06f
