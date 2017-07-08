@@ -1,5 +1,9 @@
-# QQIP探测
-探测某个或某些QQ用户的IP。    
-代码非常烂，也没有注释。   
-## 使用方法
-修改index.js里的siteUrl，然后文件全扔你服务器上就行了。
+# QQIPDetector
+
+Detect the IP of one or some of the QQ users.
+## Usage
+
+Modify the siteUrl in index.js, and then upload all the files to your server.
+## License
+
+QQIPDetector is licensed under the **GNU General Public License v3 (GPL-3)** (http://www.gnu.org/copyleft/gpl.html).
