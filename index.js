@@ -78,16 +78,3 @@ function ipip(ip) {
 			myApp.hideIndicator()
 		}
 	})
-<<<<<<< HEAD
-}
-=======
-}
-myApp.addNotification({
-	message: '此应用仅在酷安网发布。',
-	hold: 10000
-});
-myApp.addNotification({
-	message: '如果出现404，请将跳转链接改为腾讯的链接后再试。',
-	hold: 1500
-});
->>>>>>> ff26ed1b5e9e3b0f382a53ee7bd70055e93ad06f
